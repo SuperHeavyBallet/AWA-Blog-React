@@ -85,9 +85,24 @@ button:focus-visible {
   width: 100vw;
 
   justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid black;
+ 
+
+}
+
+.ghost-nav-bar{
+  left: 0;
+ top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+
+  color: #ffffff00;
+  background-color:#ffffff00 ;
+
 
   border: 1px solid black;
-
 }
 
 .nav-bar-logo{
@@ -108,4 +123,85 @@ button:focus-visible {
 .nav-bar-link-element:hover{
   background-color: #1a1a1a;
   color: white;
+}
+
+.content-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  flex-direction: row;
+}
+
+.main-column{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gutter{
+ background-color: yellow;
+  border: 1px solid black;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Home Page */
+.home-page-head-area{
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 2vh;
+  border: 1px solid black;
+
+}
+
+.home-page-news-area{
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+  border: 1px solid black;
+  
+  
+}
+
+.large-news-area{
+  display: flex;
+  flex-direction: column;
+  margin: 1vh;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1.5;
+}
+
+.large-news-area img{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.large-news-area h3{
+  background-color: yellow;
+}
+
+.small-news-area{
+  display: flex;
+  flex-direction: column;
+  margin: 1vh;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.small-news-area img{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.small-news-area h3{
+  background-color: yellow;
 }
