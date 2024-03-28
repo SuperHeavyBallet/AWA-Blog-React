@@ -161,6 +161,8 @@ button:focus-visible {
 
 }
 
+
+
 .home-page-news-area{
   display: flex;
   flex-direction: row;
@@ -295,4 +297,11 @@ button:focus-visible {
   height:2.5em;
 }
 
-/* Home Second Area */
+/* Home Mid Area */
+
+.home-page-mid-area{
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 2vh;
+  border: 1px solid black;
+}
