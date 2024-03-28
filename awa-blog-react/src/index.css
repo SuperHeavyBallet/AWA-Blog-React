@@ -87,6 +87,8 @@ button:focus-visible {
   justify-content: space-between;
   background-color: #ffffff;
   border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 99;
  
 
 }
@@ -127,7 +129,7 @@ button:focus-visible {
 
 .content-container{
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
 
   flex-direction: row;
@@ -148,11 +150,14 @@ button:focus-visible {
 }
 
 /* Home Page */
+
+/* Head - News Area */
+
 .home-page-head-area{
   display: flex;
   flex-direction: column;
   padding: 4vh 2vh;
-  border: 1px solid black;
+  
 
 }
 
@@ -160,19 +165,32 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
  justify-content: center;
-  border: 1px solid black;
   
+  z-index: 1;
   
 }
 
 .large-news-area{
   display: flex;
   flex-direction: column;
+  flex: 1.8;
+}
+
+.small-news-area{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.large-news-area > .news-preview{
+  display: flex;
+  flex-direction: column;
   margin: 1vh;
-  border: 1px solid black;
+  
   align-items: center;
   justify-content: flex-end;
-  flex: 1.5;
+
 }
 
 .large-news-area img{
@@ -183,17 +201,26 @@ button:focus-visible {
 }
 
 .large-news-area h3{
-  background-color: yellow;
+  /*background-color: yellow;*/
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
 
 .small-news-area{
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.small-news-area > .news-preview{
+  display: flex;
+  flex-direction: column;
   margin: 1vh;
-  border: 1px solid black;
+
   align-items: center;
   justify-content: flex-end;
-  flex: 1;
+  
 }
 
 .small-news-area img{
@@ -203,5 +230,69 @@ button:focus-visible {
   object-fit: contain;
 }
 .small-news-area h3{
-  background-color: yellow;
+  /*background-color: yellow;*/
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
+
+.small-news-header{
+  height: 10%;
+  /*background-color: yellow;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.small-news-footer
+{
+  display: flex;
+  flex-direction: row;
+  
+  background-color: black;
+  color: white;
+  margin: 2vh;
+  padding: 1vh;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.small-news-footer:hover{
+  cursor: pointer;
+  transform: scale(102%);
+  transform: translateX(10px);
+}
+
+.news-preview{
+  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+
+.news-preview:hover{
+  cursor: pointer;
+  transform: scale(102%);
+
+}
+
+.news-preview h3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 0.5em 0;
+  height:2.5em;
+}
+
+.news-preview p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0.1em 0.3em;
+  height:2.5em;
+}
+
+/* Home Second Area */

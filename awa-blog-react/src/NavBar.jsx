@@ -8,12 +8,12 @@ export default function NavBar()
         <div className="nav-bar">
             <NavBarLogo logoText={"ARMWRESTLING ACADEMIA"} />
             <div className="nav-bar-links">
-                <NavBarLink linkText={"Link 1"}/>
-                <NavBarLink linkText={"Link 2"}/>
-                <NavBarLink linkText={"Link 3"}/>
-                <NavBarLink linkText={"Link 4"}/>
-                <NavBarLink linkText={"Link 5"}/>
-                <NavBarLink linkText={"Link 6"}/>
+                <NavBarLink linkText={"News"}/>
+                <NavBarLink linkText={"Exercises"}/>
+                <NavBarLink linkText={"Workouts"}/>
+                <NavBarLink linkText={"Ready-Go App"}/>
+                <NavBarLink linkText={"Coaching"}/>
+                <NavBarLink linkText={"About"}/>
             </div>
         </div>
     )

@@ -5,10 +5,12 @@ import MainColumn from "./MainColumn";
 import GhostNavBar from "./GhostNavBar";
 
 
-export default function Constructor()
+
+export default function HomePageConstructor()
 {
 
     return(
+
         <div className="display-container">
             
             <NavBar />
