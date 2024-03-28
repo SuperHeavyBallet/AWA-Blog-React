@@ -302,6 +302,19 @@ button:focus-visible {
 .home-page-mid-area{
   display: flex;
   flex-direction: column;
+  
   padding: 4vh 2vh;
   border: 1px solid black;
+  width: 80%;
+}
+
+.mid-area-columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.mid-area-columns > div{
+
 }
