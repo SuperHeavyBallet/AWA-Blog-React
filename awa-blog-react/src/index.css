@@ -157,6 +157,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   padding: 4vh 2vh;
+  width: 80%;
   
 
 }
@@ -244,12 +245,15 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  
 }
 
 .small-news-footer
 {
   display: flex;
   flex-direction: row;
+  align-items: center;
   
   background-color: black;
   color: white;
@@ -262,8 +266,9 @@ button:focus-visible {
 
 .small-news-footer:hover{
   cursor: pointer;
-  transform: scale(102%);
+
   transform: translateX(10px);
+  
 }
 
 .news-preview{
@@ -285,16 +290,15 @@ button:focus-visible {
   background-color: black;
   color: white;
   padding: 0.5em 0;
-  height:2.5em;
 }
 
 .news-preview p{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
+  padding: 2vh 1vw 4vh 1vw;
 
-  padding: 0.1em 0.3em;
-  height:2.5em;
 }
 
 /* Home Mid Area */
@@ -302,19 +306,103 @@ button:focus-visible {
 .home-page-mid-area{
   display: flex;
   flex-direction: column;
-  
+
   padding: 4vh 2vh;
-  border: 1px solid black;
   width: 80%;
 }
 
 .mid-area-columns{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  border: 1px solid black;
-}
-
-.mid-area-columns > div{
+  justify-content: space-around;
 
 }
+
+.home-page-mid-title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Column Banner */
+
+.column-banner{
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.column-banner:hover{
+  cursor: pointer;
+  transform: scale(102%);
+}
+
+.column-banner h3{
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  padding: 1vh;
+  color: #FFF;
+}
+
+.column-banner h4,
+.column-banner h5{
+  padding: 0;
+  margin: 0;
+}
+.athlete-title{
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  padding: 1vh;
+  color: #FFF;
+}
+
+.column-banner p{
+  padding: 2vh 1vh 3vh 1vh;
+  margin: 0;
+  text-align: center;
+}
+
+.column-banner p::before,
+.column-banner p::after{
+  content: '"';
+  font-weight: bolder;
+  padding: 1vh;
+}
+
+.analysis-footer{
+
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-self: flex-end;
+  
+  background-color: black;
+  color: white;
+  margin: 3vh;
+  padding: 1vh;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.analysis-footer:hover{
+  
+  cursor: pointer;
+
+  transform: translateX(10px);
+}
+
+.analysis-footer h3{
+  margin: 0;
+  padding: 0.5em 2em;
+
+}
+
+.analysis-footer svg{
+  margin: 0;
+  padding: 0 0.5vw 0 0;
+}
+

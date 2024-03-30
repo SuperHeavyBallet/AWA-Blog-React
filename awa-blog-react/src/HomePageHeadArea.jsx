@@ -1,6 +1,28 @@
 import NewsPreview from "./NewsPreview";
 import MetalPipes from "./images/metalPipes.jpg"
 
+class NewsPreviewPiece {
+    constructor(title, image, author, date, mainText) {
+        this.title = title;
+        this.image = image;
+        this.author = author;
+        this.date = date;
+        this.mainText = mainText;
+    }
+}
+
+const mainNewsPreview = new NewsPreviewPiece(
+    "REVIEW: Krasimir Kostadinov's Handle",
+    MetalPipes,
+    "Alexander Gorham",
+    "01:01:0001",
+    <>
+            The Legend of Armwrestling; Krasimir Kostadinov from Bulgaria has just released his new training handle to the public. How does it hold up to other options out there?
+    </>
+);
+
+
+
 export default function HomePageHeadArea()
 {
     return(
@@ -9,7 +31,8 @@ export default function HomePageHeadArea()
 
             <div className="home-page-news-area"> 
                 <div className="large-news-area">
-                    <NewsPreview className="large-news-preview" image={MetalPipes} title="REVIEW: Krasimir Kostadinov's Handle" previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
+                    <NewsPreview 
+                        className="large-news-preview" image={MetalPipes} title={mainNewsPreview.title} previewText={mainNewsPreview.mainText}/>
                 </div>
 
                 <div className="small-news-area">
