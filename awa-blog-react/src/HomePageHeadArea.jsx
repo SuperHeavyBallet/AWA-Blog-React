@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import NewsPreview from "./NewsPreview";
 import MetalPipes from "./images/metalPipes.jpg"
 
 class NewsPreviewPiece {
-    constructor(title, image, author, date, mainText) {
+    constructor(linkDestination, title, image, author, date, mainText) {
+        this.linkDestination = linkDestination;
         this.title = title;
         this.image = image;
         this.author = author;
@@ -12,6 +14,7 @@ class NewsPreviewPiece {
 }
 
 const mainNewsPreview = new NewsPreviewPiece(
+    "/articles",
     "REVIEW: Krasimir Kostadinov's Handle",
     MetalPipes,
     "Alexander Gorham",
@@ -32,7 +35,11 @@ export default function HomePageHeadArea()
             <div className="home-page-news-area"> 
                 <div className="large-news-area">
                     <NewsPreview 
-                        className="large-news-preview" image={MetalPipes} title={mainNewsPreview.title} previewText={mainNewsPreview.mainText}/>
+                        className="large-news-preview" 
+                        linkDestination={mainNewsPreview.linkDestination}
+                        image={MetalPipes} 
+                        title={mainNewsPreview.title} 
+                        previewText={mainNewsPreview.mainText}/>
                 </div>
 
                 <div className="small-news-area">
@@ -40,10 +47,25 @@ export default function HomePageHeadArea()
                         <h3>Latest Content</h3>
                     </div>
                 
-                    <NewsPreview className="small-news-preview" image={null} title="Is this the future of Armwrestling?" previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
-                    <NewsPreview className="small-news-preview" image={null} title="What happened to hard work?" previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
-                    <NewsPreview className="small-news-preview" image={null} title="What we can learn from Kazakhstan & Georgia" previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
+                    <NewsPreview 
+                        className="small-news-preview" 
+                        linkDestination={mainNewsPreview.linkDestination}
+                        image={null} title="Is this the future of Armwrestling?" 
+                        previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
 
+                    <NewsPreview 
+                        className="small-news-preview" 
+                        linkDestination={mainNewsPreview.linkDestination}
+                        image={null} title="What happened to hard work?" 
+                        previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
+
+                    <NewsPreview 
+                        className="small-news-preview"
+                        linkDestination={mainNewsPreview.linkDestination} 
+                        image={null} title="What we can learn from Kazakhstan & Georgia" 
+                        previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
+
+        <Link to="articles">
                     <div className="small-news-footer">
                         
                         <h3>More News</h3>
@@ -52,6 +74,7 @@ export default function HomePageHeadArea()
                                 </polygon>
                                 </svg>
                     </div>
+                    </Link>
                 
                 </div>
             </div>

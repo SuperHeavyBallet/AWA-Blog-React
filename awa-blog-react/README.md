@@ -1,8 +1,15 @@
 # React + Vite
+TODO!!!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Adjust Navbar links to cover whole button area X
 
-Currently, two official plugins are available:
+- create articles page X
+- create exercises page X
+- create workouts page X
+- create ready go app page X
+- create coaching page X
+- create about page X
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Adjust CSS on mid area title
+- add links to mid area cards
+- Summarise Coaching page
