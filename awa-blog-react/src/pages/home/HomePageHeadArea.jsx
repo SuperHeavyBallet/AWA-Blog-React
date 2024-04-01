@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import NewsPreview from "./NewsPreview";
-import MetalPipes from "./images/metalPipes.jpg"
+
+import NewsPreview from "../../components/NewsPreview";
+import MetalPipes from "../../images/metalPipes.jpg"
 
 class NewsPreviewPiece {
     constructor(linkDestination, title, image, author, date, mainText) {
@@ -65,6 +66,7 @@ export default function HomePageHeadArea()
                         image={null} title="What we can learn from Kazakhstan & Georgia" 
                         previewText="Lorem ipsum dolce gabanna hm versace indigo foxtrot..."/>
 
+<div className="arrow-link-container">
         <Link to="articles">
                     <div className="small-news-footer">
                         
@@ -75,6 +77,7 @@ export default function HomePageHeadArea()
                                 </svg>
                     </div>
                     </Link>
+                    </div>
                 
                 </div>
             </div>

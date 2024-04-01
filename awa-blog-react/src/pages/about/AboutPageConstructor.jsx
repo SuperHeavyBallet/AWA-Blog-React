@@ -1,25 +1,21 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Gutter from "./Gutter";
-import MainColumn from "./MainColumn";
+import NavBar from "../../components/NavBar";
+import Gutter from "../../components/Gutter";
+import AboutPageMainColumn from "./AboutPageMainColumn";
 
-
-
-export default function HomePageConstructor()
-{
-
+function AboutPageConstructor() {
     return(
-
         <div className="display-container">
             
             <NavBar />
             <div className="content-container">
                 
                 <Gutter gutterPosition={"left"}/>
-                <MainColumn />
+                <AboutPageMainColumn />
                 <Gutter gutterPosition={"right"}/>
             </div>
         </div>
     )
-    
 }
+
+export default AboutPageConstructor;

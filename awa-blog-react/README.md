@@ -10,6 +10,6 @@ TODO!!!
 - create coaching page X
 - create about page X
 
-- Adjust CSS on mid area title
-- add links to mid area cards
+- Adjust CSS on mid area title X
+- add links to mid area cards X
 - Summarise Coaching page

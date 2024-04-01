@@ -126,6 +126,7 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
   padding: 0 5vw;
+
 }
 .nav-bar-links{
   display: flex;
@@ -368,6 +369,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 2vh 1vw 3vh 1vw;
 }
 
 /* Column Banner */
@@ -378,9 +380,18 @@ button:focus-visible {
   max-width: 30%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .column-banner:hover{
   cursor: pointer;
   transform: scale(102%);
+}
+
+.column-banner img{
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 .column-banner h3{
@@ -452,3 +463,14 @@ button:focus-visible {
   padding: 0 0.5vw 0 0;
 }
 
+.arrow-link-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.arrow-link-container a{
+  width: fit-content;
+}

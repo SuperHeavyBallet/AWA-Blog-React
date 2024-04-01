@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import HomePageConstructor from './HomePageConstructor.jsx'
+import HomePageConstructor from './pages/home/HomePageConstructor.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -9,12 +9,15 @@ import {
   Route,
 } from "react-router-dom";
 
-import ArticlesPage from './pages/ArticlesPage.jsx';
-import ExercisesPage from './pages/ExercisesPage.jsx';
-import WorkoutsPage from './pages/WorkoutsPage.jsx';
-import ReadyGoAppPage from './pages/ReadyGoAppPage.jsx';
-import CoachingPage from './pages/CoachingPage.jsx';
-import AboutPage from './pages/AboutPage.jsx';
+
+
+
+import CoachingPageConstructor from './pages/coaching/CoachingPageConstructor.jsx';
+import ArticlesPageConstructor from './pages/articles/ArticlesPageConstructor.jsx';
+import AboutPageConstructor from './pages/about/AboutPageConstructor.jsx';
+import ExercisesPageConstructor from './pages/exercises/ExercisesPageConstructor.jsx';
+import WorkoutsPageConstructor from './pages/workouts/WorkoutsPageConstructor.jsx';
+import ReadyGoAppPageConstructor from './pages/readygoapp/ReadyGoAppPageConstructor.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,27 +26,27 @@ const router = createBrowserRouter([
   },
   {
     path: "articles",
-    element: <ArticlesPage />,
+    element: <ArticlesPageConstructor />,
   },
   {
     path: "exercises",
-    element: <ExercisesPage />,
+    element: <ExercisesPageConstructor />,
   },
   {
     path: "workouts",
-    element: <WorkoutsPage />,
+    element: <WorkoutsPageConstructor />,
   },
   {
     path: "readygo",
-    element: <ReadyGoAppPage />,
+    element: <ReadyGoAppPageConstructor />,
   },
   {
     path: "coaching",
-    element: <CoachingPage />,
+    element: <CoachingPageConstructor />,
   },
   {
     path: "about",
-    element: <AboutPage />,
+    element: <AboutPageConstructor />,
   },
 ])
 
