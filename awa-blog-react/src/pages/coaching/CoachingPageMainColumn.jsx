@@ -1,5 +1,7 @@
 import CoachingPageHeadArea from "./CoachingPageHeadArea";
 import CoachingPageMidArea from "./CoachingPageMidArea";
+import CoachingPageBottomArea from "./CoachingPageBottomArea";
+import Footer from "../../components/Footer";
 
 export default function CoachingPageMainColumn()
 {
@@ -7,6 +9,8 @@ export default function CoachingPageMainColumn()
         <div className="main-column">
             <CoachingPageHeadArea />
             <CoachingPageMidArea />
+            <CoachingPageBottomArea />
+            <Footer />
             
         </div>
     )

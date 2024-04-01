@@ -6,8 +6,9 @@ export default function NewsPreview( { linkDestination, image, title, previewTex
             <Link 
             to={linkDestination}
             className="link-style">
-            <img src={image}></img>
+            
             <h3>{title}</h3>
+            <img src={image}></img>
             <p>{previewText}</p>
             </Link>
         </div>

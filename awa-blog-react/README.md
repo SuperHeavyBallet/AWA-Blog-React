@@ -1,15 +1,17 @@
 # React + Vite
 TODO!!!
 
-- Adjust Navbar links to cover whole button area X
+- CSS adjust coaching page elements
+- Add example analysis exerpts
+- Link Social Media to Athlete profiles
+- Create Button to show More or Hide athlete profiles beyond 3 cards > CSS add className 'Hidden' or remove
 
-- create articles page X
-- create exercises page X
-- create workouts page X
-- create ready go app page X
-- create coaching page X
-- create about page X
+- Create Footer Content
+- Create Favicon
 
-- Adjust CSS on mid area title X
-- add links to mid area cards X
-- Summarise Coaching page
+- Build Ready Go Page
+- Port Ready Go App
+- Build Articles Page
+- Build Exercises Page
+- Build Workouts Page
+- Build About Page

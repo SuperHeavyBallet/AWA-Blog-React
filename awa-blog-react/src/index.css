@@ -89,6 +89,8 @@ button:focus-visible {
 
 }
 
+/* NavBar */
+
 .nav-bar{
  position: fixed;
  left: 0;
@@ -148,6 +150,8 @@ button:focus-visible {
 
   
 }
+
+
 
 .nav-bar-link:hover{
   background-color: #1a1a1a;
@@ -295,7 +299,7 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+  border-radius: 5px;
   background-color: black;
   color: white;
   margin: 2vh;
@@ -309,27 +313,31 @@ button:focus-visible {
   cursor: pointer;
 
   transform: translateX(10px);
+  transition: transform ease-out 0.05s;
   
 }
 
 .news-preview{
-  
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
+  transition: transform ease-out 0.3s;
 }
 
 .news-preview img {
+
   display: block;
 }
 
 .news-preview:hover{
   cursor: pointer;
   transform: scale(102%);
+  transition: transform ease-out 0.05s;
 
 }
 
 
 .news-preview h3{
+  border-radius: 5px 5px 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,13 +385,18 @@ button:focus-visible {
 .column-banner{
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  text-align: center;
+  width: fit-content;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1vw;
+  transition: transform ease-out 0.3s;
+  border-radius: 5px;
 }
 
 .column-banner:hover{
   cursor: pointer;
   transform: scale(102%);
+  transition: transform ease-out 0.05s;
 }
 
 .column-banner img{
@@ -392,10 +405,11 @@ button:focus-visible {
   overflow: hidden;
   width: 100%;
   height: auto;
+  
 }
 
 .column-banner h3{
-  text-align: center;
+  border-radius: 5px 5px 0 0;
   background-color: black;
   margin: 0;
   padding: 1vh;
@@ -435,7 +449,7 @@ button:focus-visible {
   align-self: center;
   align-items: center;
   justify-self: flex-end;
-  
+  border-radius: 5px;
   background-color: black;
   color: white;
   margin: 3vh;
@@ -450,6 +464,7 @@ button:focus-visible {
   cursor: pointer;
 
   transform: translateX(10px);
+  transition: transform ease-out 0.05s;
 }
 
 .analysis-footer h3{
@@ -473,4 +488,119 @@ button:focus-visible {
 
 .arrow-link-container a{
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Coaching Page */
+
+.coaching-page-mid-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+  width: 100%;
+}
+
+.coaching-page-mid-title{
+
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.coaching-page-athlete-profile-flex{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+
+
+}
+
+.coaching-page-athlete-profile-grid{
+
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px; /* Adjust the gap as needed */
+
+}
+
+.athlete-banner{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: fit-content;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1vw;
+  transition: transform ease-out 0.3s;
+  border-radius: 5px;
+  background-color: black;
+  
+}
+
+.athlete-banner:hover{
+  transform: scale(102%);
+  transition: transform ease-out 0.05s;
+}
+
+.athlete-profile{
+  
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: fit-content;
+}
+
+.athlete-profile-banner{
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.athlete-title{
+  color: white;
+  padding: 0.5vw;
+  border-radius: 5px 5px 0 0;
+}
+
+.athlete-profile-banner h4{
+  background-color: black;
+  color: white;
+  padding: 1vh;
+  
+  
+}
+
+.athlete-banner-bottom{
+  border-radius: 0 0 5px 5px;
+}
+
+.athlete-see-more-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.athlete-see-more-button button{
+  background-color: black;
+  color: white;
+  width: fit-content;
+  transition: transform ease-out 0.1s;
+}
+
+.athlete-see-more-button button:hover{
+  transform: scale(104%);
+  transition: transform ease-out 0.05s;
 }
