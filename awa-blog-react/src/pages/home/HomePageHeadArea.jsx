@@ -38,7 +38,7 @@ export default function HomePageHeadArea()
                     <NewsPreview 
                         className="large-news-preview" 
                         linkDestination={mainNewsPreview.linkDestination}
-                        image={MetalPipes} 
+                        image={mainNewsPreview.image} 
                         title={mainNewsPreview.title} 
                         previewText={mainNewsPreview.mainText}/>
                 </div>
