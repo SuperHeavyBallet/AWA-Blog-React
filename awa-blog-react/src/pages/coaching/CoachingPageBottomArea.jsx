@@ -1,8 +1,12 @@
+import TextSampleCard from "../../components/TextSampleCard"
+
 export default function CoachingPageBottomArea()
 {
     return(
         <div>
-            Bottom Area
+            <TextSampleCard text="Text 1" />
+            <TextSampleCard text="Text 2" />
+            <TextSampleCard text="Text 3" />
         </div>
     )
 }

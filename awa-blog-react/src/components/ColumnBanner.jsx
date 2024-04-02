@@ -9,7 +9,7 @@ export default function ColumnBanner( { linkDestination, title, image, analysisB
             className="link-style">
                 <h3>{title}</h3>
                 <img src={image}></img>
-                <div className="athlete-title">
+                <div className="preview-athlete-title">
                     <h4>{analysisBy}</h4>
                     <h5>{accolades}</h5>
                 </div>

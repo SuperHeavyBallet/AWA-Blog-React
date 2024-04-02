@@ -64,7 +64,9 @@ export default function CoachingPageMidArea()
     return (
         <div className="coaching-page-mid-area">
             <div className="coaching-page-mid-title">
+                <div className="coaching-page-title">
                 <h3>Athletes Involved in Analysis</h3>
+                    </div>
                 </div>
             <div className={displayClass}>
                 {displayAthletes.map((athlete) => (
