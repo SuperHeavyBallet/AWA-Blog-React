@@ -2,7 +2,7 @@ export default function CoachingPageHeadArea()
 {
     return (
         <div className="coaching-page-head-area">
-            <div className="coaching-page-head-text"></div>
+           
             <div className="coaching-page-title">
                 <h3>Submit Your Videos - Get Analysed by Elite Athletes</h3>
             </div>

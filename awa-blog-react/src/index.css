@@ -127,13 +127,39 @@ button:focus-visible {
 .nav-bar-logo{
   display: flex;
   flex-direction: row;
-  padding: 0 5vw;
+  padding: 0 1vw 0 5vw;
 
 }
+
+
+/* Logo Resize */
+@media only screen and (min-width: 1330px){
+  .logo-full{
+    display: block;
+  }
+  
+  .logo-short{
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 1330px){
+  .logo-full{
+    display: none;
+  }
+  
+  .logo-short{
+    display: block;
+  }
+
+}
+
 .nav-bar-links{
   display: flex;
   flex-direction: row;
-  padding: 0 5vw;
+  padding: 0 1vw 0 5vw;
   height: 100%;
   
 }
@@ -171,12 +197,25 @@ button:focus-visible {
   color: wheat;
 }
 
+/* NavBar links responsive display */
+
+
+@media only screen and (max-width: 1000px){
+  .nav-bar-links{
+    display: none;
+  }
+
+}
+
+
+
 
 .content-container{
   width: 100vw;
   height: auto;
   display: flex;
-
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
@@ -187,13 +226,23 @@ button:focus-visible {
   align-items: center;
 }
 .gutter{
- background-color: yellow;
-  border: 1px solid black;
+
+
   width: 15vw;
   display: flex;
   flex-direction: column;
 }
 
+@media only screen and (max-width: 910px){
+  .gutter{
+
+    display: none;
+
+  }
+
+}
+
+/*******************************************************/
 /* Home Page */
 
 /* Head - News Area */
@@ -356,6 +405,7 @@ button:focus-visible {
 
 }
 
+/*******************************************************/
 /* Home Mid Area */
 
 .home-page-mid-area{
@@ -381,6 +431,7 @@ button:focus-visible {
   padding: 2vh 1vw 3vh 1vw;
 }
 
+/*******************************************************/
 /* Column Banner */
 
 .column-banner{
@@ -501,14 +552,94 @@ button:focus-visible {
   align-items: center;
 }
 
+/*******************************************************/
+/* Articles Page */
+
+.article-page-head h3{
+  background-color: black;
+  color: white;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+/*******************************************************/
+/* Articles Mid Page */
+
+.article{
+  
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1vh 1vw 5vh 1vw;
+}
+
+.article-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1.5vh 1vw;
+}
+
+.article-head-image{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 4vw;
+  
+}
+
+.article-publish-date{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1vw;
+  margin-left: 70%;
+  transform: translateY(-40px);
+  background-color: black;
+
+  color: white;
+}
+.article-text{
+  padding: 1vh 2em;
+}
+
+.article-author{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1vh 1vw;
+  margin: 2vh 0 2vh 70% ;
+  background-color: black;
+
+  color: white;
+}
+
+
+
+/*******************************************************/
 /* Coaching Page */
+
+/*******************************************************/
+/* Coaching Page Top */
 
 .coaching-page-head-area{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  width: 100%;
   padding: 3vh 1vw 1vh 1vw;
 }
 
@@ -522,6 +653,7 @@ button:focus-visible {
 
 .coaching-page-head-instructions{
   margin: 3vh 1vw 0vh 1vw;
+  padding: 1vh;
   display: flex;
   flex-direction: column;
   border: 1px dashed black;
@@ -539,11 +671,18 @@ button:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1.5vh;
+  margin: 0.2vw 2vh;
+  padding: 0.5vw 1vw;
   color: black;
 }
 
-
+.instruction-top h2{
+  margin: 1vh 0;
+  background-color: black;
+  color: white;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+}
 
 .instruction-bottom{
   margin-bottom: 0vh;
@@ -552,6 +691,9 @@ button:focus-visible {
 .instruction-bottom ul{
   padding: 1vh;
 }
+
+/*******************************************************/
+/* Coaching Page Middle */
 
 .coaching-page-mid-area{
   display: flex;
@@ -574,6 +716,7 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 
 
 }
@@ -583,9 +726,22 @@ button:focus-visible {
   display: grid;
   width: 100%;
   max-width: 1200px;
+  justify-content: center; /* centers items horizontally */
+  align-items: center; /* centers items vertically */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px; /* Adjust the gap as needed */
 
+}
+
+@media only screen and (max-width: 600px) {
+  .coaching-page-athlete-profile-grid{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  
+  }
 }
 
 .athlete-banner{
@@ -646,6 +802,7 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin: 1vh 0 4vh 0;
 }
 
 .athlete-see-more-button button{
@@ -660,15 +817,68 @@ button:focus-visible {
   transition: transform ease-out 0.05s;
 }
 
-/* Text Sample Card */
+/*Coaching Page Bottom */
 
-.text-sample-card{
-  display: grid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.example-analysis-exerpts{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.example-analysis-exerpts h4{
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 1vh;
   border-radius: 5px;
+  margin: 3vh 1vw 2vh;
 
 }
 
+/*******************************************************/
+/* Text Sample Card */
+
+.text-sample-card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  padding: 0 2vh 2vh 2vh;
+  margin: 3vh 1vh;
+  border: 1px dashed black;
+
+}
+
+.sample-card-name{
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+
+.text-sample-text p{
+  margin: 1vh;
+}
+
+.left{
+  align-items: flex-start;
+}
+.right{
+  align-items: flex-end;
+}
+
+
+.sample-card-name h5{
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 1vh;
+  transform: translateY(-10px);
+  border-radius: 5px;
+}
+
+/*******************************************************/
 /* Footer */
 .footer{
   display: flex;
@@ -679,7 +889,9 @@ button:focus-visible {
   width: 100vw;
   z-index: 89;
   height: fit-content;
+  margin-top: 4vh;
 }
+
 
 .footer-left,
 .footer-right{

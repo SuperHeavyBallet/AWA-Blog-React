@@ -11,7 +11,7 @@ export default function NavBar()
        
         <div className="nav-bar">
             
-            <NavBarLogo logoText={"ARMWRESTLING ACADEMIA"} />
+            <NavBarLogo logoFullText={"ARMWRESTLING ACADEMIA"} logoShortText={"AWA"}/>
             <div className="nav-bar-links">
                 <NavBarLink linkText={"Home"} linkDestination="/"/>
                 <NavBarLink linkText={"Articles"} linkDestination="/articles"/>

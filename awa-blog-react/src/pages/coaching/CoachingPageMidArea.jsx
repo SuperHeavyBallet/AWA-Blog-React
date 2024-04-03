@@ -3,19 +3,20 @@ import MetalPipes from "../../images/metalPipes.jpg"
 import { useState } from "react";
 
 class AthleteBio {
-    constructor( athleteID, athleteName, athletePhoto, athleteCredentials, athleteTechnique)
+    constructor( athleteID, athleteName, athletePhoto, athleteCredentials, athleteTechnique, athleteSocialLink)
     {
         this.id = athleteID;
         this.athleteName = athleteName;
         this.athletePhoto = athletePhoto;
         this.athleteCredentials = athleteCredentials;
         this.athleteTechnique = athleteTechnique;
+        this.athleteSocialLink = athleteSocialLink;
     }
 }
 
-const athleteSlobodanNovakovic = new AthleteBio( 0,"Slobodan Novaković", MetalPipes, "10x Serbian 90KG National Champion", "Top Roll, Hook");
-const athleteDarkoSreckovic = new AthleteBio( 1, "Darko Sreckovic", MetalPipes, "8x Serbian 90KG National Champion", "Top Roll, Hook");
-const athleteKrasimirKostadinov = new AthleteBio( 2, "Krasimir Kostadinov", MetalPipes, "8x Bulgarian 110kg National Champion", "Hook");
+const athleteSlobodanNovakovic = new AthleteBio( 0,"Slobodan Novaković", MetalPipes, "10x Serbian 90KG National Champion", "Top Roll, Hook", "https://instagram.com");
+const athleteDarkoSreckovic = new AthleteBio( 1, "Darko Sreckovic", MetalPipes, "8x Serbian 90KG National Champion", "Top Roll, Hook", "https://instagram.com");
+const athleteKrasimirKostadinov = new AthleteBio( 2, "Krasimir Kostadinov", MetalPipes, "8x Bulgarian 110kg National Champion", "Hook", "https://instagram.com");
 
 
 const smallAthleteList = [
@@ -76,6 +77,7 @@ export default function CoachingPageMidArea()
                     image={athlete.athletePhoto}
                     accolades={athlete.athleteCredentials}
                     technique={athlete.athleteTechnique}
+                    linkDestination={athlete.athleteSocialLink}
                     />
                 ))}
                 

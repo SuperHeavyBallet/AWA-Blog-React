@@ -1,6 +1,8 @@
 export default function ArticlesPageHeadArea()
 {
     return (
-        <div>Head Area</div>
+        <div className="article-page-head">
+            <h3>Latest Article</h3>
+            </div>
     )
 }

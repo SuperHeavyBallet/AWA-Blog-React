@@ -4,7 +4,7 @@ export default function GhostNavBar()
 {
     return (
         <div className="ghost-nav-bar">
-            <NavBarLogo logoText={"ARMWRESTLING ACADEMIA"} />
+            <NavBarLogo logoText={""} />
 
         </div>
     )
