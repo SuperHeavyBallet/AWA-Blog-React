@@ -2,7 +2,7 @@ export default function ArticleContainer( {articleTitle, articleHeadImage, artic
 {
     return(
         <div className="article">
-            <h3 className="article-title">{articleTitle}</h3>
+            <h2 className="article-title">{articleTitle}</h2>
             <img src={articleHeadImage} className="article-head-image"></img>
             <h4 className="article-publish-date">{`Published on: ${articlePublishDate}`}</h4>
             <p className="article-text">{articleText}</p>

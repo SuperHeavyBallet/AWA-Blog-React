@@ -24,3 +24,5 @@ TODO!!!
 
 - differentiate titles/banners from clickable buttons
 - fix coaching page top text card not resizing to smaller, might have min width
+
+- Add Side column to article page

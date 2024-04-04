@@ -563,9 +563,23 @@ button:focus-visible {
   margin: 2vh 1vw 2vh 1vw;
 }
 
-/*******************************************************/
-/* Articles Mid Page */
+.articles-page{
+  display: flex;
+  flex-direction: row;
+}
+.article-left-column{
+  width: 75%;
+  
+}
 
+.article-right-column{
+  width: 25%;
+  margin-left: 1vw;
+  border-left: 1px dashed black;
+  align-items: center;
+}
+
+/* Left Column */
 .article{
   
   border-radius: 5px;
@@ -626,7 +640,28 @@ button:focus-visible {
   color: white;
 }
 
+/* Right Column */
 
+.article-list-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4vh 2vw 2vh 2vw;
+
+}
+
+.article-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1vh 2vw;
+  
+}
+
+.article-list-element{
+  padding: 1vh 0;
+}
 
 /*******************************************************/
 /* Coaching Page */
