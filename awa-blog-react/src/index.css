@@ -661,6 +661,14 @@ button:focus-visible {
 
 .article-list-element{
   padding: 1vh 0;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.article-list-element:hover{
+  transform: scale(102%);
+  transition: transform ease-out 0.05s;
+
 }
 
 /*******************************************************/

@@ -25,4 +25,6 @@ TODO!!!
 - differentiate titles/banners from clickable buttons
 - fix coaching page top text card not resizing to smaller, might have min width
 
-- Add Side column to article page
+- `Add Side column to article page`
+
+- Coaching page, Submit Videos Button at bottom needs to link to the top of the page

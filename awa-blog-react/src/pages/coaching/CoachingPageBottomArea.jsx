@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TextSampleCard from "../../components/TextSampleCard"
 
 const text1 = [
@@ -35,12 +36,14 @@ export default function CoachingPageBottomArea()
             <TextSampleCard analysisBy="Slobodan Novakovic" text={text2} titlePosition="right"/>
             <TextSampleCard analysisBy="Slobodan Novakovic" text={text3} titlePosition="left" />
         
+        
+        <Link to="/coaching" >
             <div className="coaching-page-head-area">
             <div className="coaching-page-title">
                 <h3>Submit Your Videos - Get Analysed by Elite Athletes</h3>
             </div>
             </div>
-        
+        </ Link>
         </div>
     )
 }

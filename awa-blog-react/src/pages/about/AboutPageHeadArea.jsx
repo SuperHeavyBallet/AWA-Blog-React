@@ -2,7 +2,7 @@ export default function AboutPageHeadArea()
 {
     return(
         <div>
-            Head Area
+            <h2>About Armwrestling Academia</h2>
         </div>
     )
 }
