@@ -1,6 +1,10 @@
+import ReadyGoApp from "../../components/ReadyGoApp"
+
 export default function ReadyGoAppMidArea()
 {
     return(
-        <div>Mid Area</div>
+        <div>
+            <ReadyGoApp />
+        </div>
     )
 }

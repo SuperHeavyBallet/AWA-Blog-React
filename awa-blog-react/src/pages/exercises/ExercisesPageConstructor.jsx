@@ -27,6 +27,7 @@ function ExercisesPageConstructor() {
                 
                 <Gutter gutterPosition={"left"}/>
                 <ExercisePageMainColumn />
+                
                 <Gutter gutterPosition={"right"}/>
             </div>
         </div>

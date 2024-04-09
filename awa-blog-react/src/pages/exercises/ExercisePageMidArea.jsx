@@ -1,9 +1,11 @@
 import ExerciseCard from "../../components/ExerciseCard";
+import ArticleList from "../../components/ArticleListElements";
 
 export default function ExercisePageMidArea()
 {
     return(
         <div>
+
             <ExerciseCard 
             exerciseName="Bicep Curl"
             helpsStyle="Hook"
@@ -25,6 +27,7 @@ export default function ExercisePageMidArea()
             />  
 
             <ExerciseCard />
+
             
         </div>
     )
