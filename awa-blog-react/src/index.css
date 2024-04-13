@@ -956,3 +956,58 @@ button:focus-visible {
 .social-media svg{
   margin: 1vh;
 }
+
+/*//////////////////////////////////////////////////////////////////
+Ready Go Page */
+
+.ready-go-container{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.ready-go-input{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+}
+
+.ready-go-input-area{
+  margin: 0.5vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.ready-go-input-area > label{
+  padding-right: 1vw;
+}
+.ready-go-input-area > select{
+  width: 8vw;
+  height: fit-content;
+}
+.ready-go-display-stats{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.ready-go-display-stats h3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ready-go-button-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh 1vw;
+}
+.ready-go-button{
+  width: 12vw;
+  height: 12vh;
+  background-color: red;
+  color: white;
+}
