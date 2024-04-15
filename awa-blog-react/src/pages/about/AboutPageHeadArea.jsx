@@ -1,8 +1,8 @@
 export default function AboutPageHeadArea()
 {
     return(
-        <div>
-            <h2>About Armwrestling Academia</h2>
+        <div className="about-page-head">
+            <h2 className="coaching-page-title">About Armwrestling Academia</h2>
         </div>
     )
 }

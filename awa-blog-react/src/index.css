@@ -1011,3 +1011,30 @@ Ready Go Page */
   background-color: red;
   color: white;
 }
+
+/* About Page */
+
+.about-page-head{
+  padding: 3vh 1vw 1vh 1vw;
+}
+.about-page-text{
+  padding: 3vh 1vw 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page-text p{
+  text-align: center;
+  margin: 1vh 1vw;
+}
+
+.about-page-bottom-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 4vh 3vw 10vh 3vw;
+
+
+}
